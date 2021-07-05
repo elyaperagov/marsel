@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+.vscode
+package-lock.json
+yarn.lock
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+Thumbs.db
+yarn-error.log
+/log

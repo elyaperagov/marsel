@@ -1,0 +1,277 @@
+.form {
+  background-color: $color-black;
+  min-height: 750px;
+  padding: 130px 0;
+
+  @media (max-width: $tablets-max) {
+    padding: 50px 0;
+    min-height: 450px;
+  }
+
+  h3 {
+    // font-style: normal;
+    // font-weight: bold;
+    // font-size: 36px;
+    // line-height: 44px;
+    color: $color-default-white;
+    margin: 0;
+  }
+}
+
+.form__request {
+  width: 76.7%;
+
+  @media (max-width: 1299px) {
+    width: 100%;
+  }
+}
+
+.form__fields-wrapper {
+  display: flex;
+
+  .form__field {
+    width: 48.5%;
+    margin-right: 3%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.form__subtitle {
+  margin-bottom: 49px;
+}
+
+.form__label {
+  cursor: pointer;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  top: 25px;
+  left: 0;
+  line-height: 100%;
+  transition: $transition-settings;
+  color: #f4f4f4;
+
+  @media (max-width: $tablets-max) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &--disabled {
+    span {
+      opacity: 0.5;
+    }
+  }
+
+  h {
+    opacity: 0;
+    transition: $transition-settings;
+  }
+
+  &:hover {
+    h {
+      opacity: 1;
+    }
+  }
+
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 28px;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+// input, textarea {
+//   outline:none;
+// }
+
+// // не показывать обводку в состоянии focus
+// input:focus, textarea:focus {
+//   outline:none;
+// }
+
+.form__input,
+.form__textarea {
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 2px solid #C4C4C4;
+  background-color: $color-black;
+  padding: 23px 15px 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  transition: $transition-settings;
+  color: $color-default-white;
+
+  @media (max-width: $tablets-max) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid $color-light-gray;
+  }
+
+  &:focus {
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid $color-light-gray;
+    padding: 26px 15px 8px;
+  }
+
+  &--error {
+    border-radius: 10px;
+    border: 1px solid $color-red !important;
+  }
+}
+
+.form__input:focus+label,
+.form__textarea:focus+label,
+.form__input:valid+label,
+.form__textarea:valid+label,
+.form__input--filled+label,
+.form__textarea--filled+label {
+  top: 8px;
+  font-size: 13px;
+
+  h {
+    opacity: 1;
+  }
+}
+
+.form__input:hover+label {
+  h {
+    opacity: 1;
+  }
+}
+
+.form__input {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 10px;
+}
+
+.form__textarea {
+  height: 52px;
+  min-height: 52px;
+  max-width: 100%;
+  width: 100%;
+  line-height: 15px;;
+  white-space: nowrap;
+  resize: none;
+}
+
+.icon-error {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.form__error {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 27px);
+  font-size: 9px;
+  line-height: 100%;
+  padding: 4px 6px;
+  background: $color-white;
+  opacity: 0;
+  z-index: 0;
+  transition: $transition-settings;
+}
+
+.icon-error:hover+.form__error,
+.form__error:hover {
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.form__length {
+  position: absolute;
+  font-size: 13px;
+  line-height: 100%;
+  opacity: 0.5;
+  bottom: 32px;
+  right: 15px;
+}
+
+.form__agree {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #C4C4C4;
+  text-align: left;
+  margin: 4px 0 0 0;
+  margin-right: 15px;
+
+  a {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C4C4C4;
+    text-align: left;
+    margin: 4px 0 0 0;
+    margin-right: 15px;
+  }
+
+  @media (max-width: $tablets-max) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.form__send {
+  display: flex;
+  align-items: center;
+  width: 56%;
+  margin-top: 72px;
+
+  @media (max-width: 1299px) {
+    margin-top: 20px;
+    width: 70%;
+  }
+
+  @media (max-width: $mobiles-max) {
+    width: 100%;
+  }
+}
+
+.form__file {
+  width: 160px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+  }
+
+  span {
+    color: $color-default-white;
+  }
+}
