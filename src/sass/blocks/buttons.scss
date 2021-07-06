@@ -1,147 +1,123 @@
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  outline: none !important;
-  border: none;
-  transition: $transition-settings;
-  cursor: pointer;
-  flex-shrink: 0;
-
-  &--toggle {
-    width: 27px;
-    position: absolute;
-    width: 29px;
-    height: 27px;
     display: flex;
-    background-color: $color-gray;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    outline: none !important;
+    border: none;
     transition: $transition-settings;
-    right: 25px;
-    top: 30px;
-    padding: 0;
-    z-index: 2;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 2px;
-      height: 20px;
-      background-color: $color-white;
-      transform: rotate(45deg);
-      transition: $transition-settings;
+    cursor: pointer;
+    flex-shrink: 0;
+    &--toggle {
+        position: absolute;
+        width: 30px;
+        height: 33px;
+        display: flex;
+        background-color: $color-white;
+        align-items: center;
+        justify-content: center;
+        transition: $transition-settings;
+        right: 25px;
+        top: 30px;
+        padding: 0;
+        z-index: 2;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 30px;
+            background-color: $color-main-green;
+            transform: rotate(45deg);
+            transition: $transition-settings;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 30px;
+            background-color: $color-main-green;
+            transform: rotate(-45deg);
+            transition: $transition-settings;
+        }
+        &.close {
+            background-color: $color-white;
+            span {
+                background-color: $color-main-green;
+                height: 5px;
+                width: 30px;
+            }
+            &:before {
+                height: 30px;
+                top: -6px;
+                background-color: $color-main-green;
+                transform: rotate(90deg);
+            }
+            &:after {
+                height: 30px;
+                bottom: -6px;
+                background-color: $color-main-green;
+                transform: rotate(90deg);
+            }
+        }
+        @media (min-width: $tablets-max) {
+            display: none;
+        }
+        @media (max-width: $tablets-max) {
+            display: flex;
+        }
     }
-
-    &:after {
-      content: '';
-      position: absolute;
-      width: 2px;
-      height: 20px;
-      background-color: $color-white;
-      transform: rotate(-45deg);
-      transition: $transition-settings;
+    &--round {
+        border-radius: 50%;
+        background-color: $color-black;
+        display: block;
+        width: 120px;
+        min-height: 120px;
+        padding: 48px 0;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 24px;
+        /* fallback */
+        margin: 0;
+        color: $color-default-white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase;
+        text-align: center;
     }
-
-    &.close {
-      background-color: $color-gray;
-
-      span {
+    &--white {
         background-color: $color-default-white;
-        height: 2px;
-        width: 25px;
-      }
-
-      &:before {
-        height: 25px;
-        top: -6px;
-        background-color: $color-default-white;
-        transform: rotate(90deg);
-      }
-
-      &:after {
-        height: 25px;
-        bottom: -6px;
-        background-color: $color-default-white;
-        transform: rotate(90deg);
-      }
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-black;
+        display: block;
+        padding: 48px 5px;
+        margin-right: auto;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
     }
-
-    @media (min-width: $tablets-max) {
-      display: none;
+    &--more {
+        @media (min-width: $desktops) {
+            transform: translateY(37px);
+        }
+        @media (max-width: $tablets-max) {
+            margin: 0 auto;
+        }
+        border: 1px solid $color-black;
     }
-
-    @media (max-width: $tablets-max) {
-      display: flex;
+    .icon {
+        stroke: $color-white;
+        transition: $transition-settings;
     }
-  }
-
-  &--round {
-    border-radius: 50%;
-    background-color: $color-black;
-    display: block;
-    width: 120px;
-    min-height: 120px;
-    padding: 48px 0;
-
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 24px; /* fallback */
-    margin: 0;
-    color: $color-default-white;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &--white {
-    background-color: $color-default-white;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    height: 12px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color-black;
-    display: block;
-    padding: 48px 5px;
-    margin-right: auto;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-  }
-
-  &--more {
-    @media (min-width: $desktops) {
-      transform: translateY(37px);
-    }
-
-    @media (max-width: $tablets-max) {
-      margin: 0 auto;
-    }
-
-    border: 1px solid $color-black;
-  }
-
-  .icon {
-    stroke: $color-white;
-    transition: $transition-settings;
-  }
-
-  &:hover {
-    background: $color-gray;
-
-    p {
-      color: $color-black;
-    }
-  }
 }

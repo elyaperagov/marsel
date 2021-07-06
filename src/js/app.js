@@ -4,15 +4,16 @@ import SlideUpDown from 'vue-slide-up-down'
 import Sprite from '../components/Sprite.vue'
 import HeaderMain from '../components/HeaderMain.vue'
 import Banners from '../components/Banners.vue'
+import Wood from '../components/Wood.vue'
+import Advantages from '../components/Advantages.vue'
 import FooterMain from '../components/FooterMain.vue'
+import Products from '../components/Products.vue'
 
 import Helpers from '../lib/Helpers.js'
 
-import VueYouTubeEmbed from "vue-youtube-embed";
 Vue.use(VueTheMask)
 Vue.use(Helpers)
 Vue.component('slide-up-down', SlideUpDown)
-Vue.use(VueYouTubeEmbed)
 
 Vue.config.comments = true
 Vue.config.ignoredElements = [
@@ -49,5 +50,8 @@ const app = new Vue({
         HeaderMain,
         Banners,
         FooterMain,
+        Wood,
+        Advantages,
+        Products
     }
 })
