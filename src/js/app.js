@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import VueTheMask from 'vue-the-mask'
 import SlideUpDown from 'vue-slide-up-down'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 import Sprite from '../components/Sprite.vue'
 import HeaderMain from '../components/HeaderMain.vue'
 import Banners from '../components/Banners.vue'
@@ -10,6 +12,8 @@ import FooterMain from '../components/FooterMain.vue'
 import Products from '../components/Products.vue'
 
 import Helpers from '../lib/Helpers.js'
+
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 
 Vue.use(VueTheMask)
 Vue.use(Helpers)
