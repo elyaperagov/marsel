@@ -6,15 +6,11 @@
           <a :href="'home.html'" class="footer__logo-link">
             <img loading="lazy" :src="logo.logo" :alt="logo.alt" />
           </a>
-          <b>{{ logo.info }}</b>
-          <p>{{ logo.inn }}</p>
         </div>
-        <Contacts :contacts="contacts" />
-        <Social :socials="socials" />
         <div class="footer__block footer__block--agreements">
-          <a class="footer__conf-link" :href="agreements.confidentiality_link">{{ agreements.confidentiality }}</a>
-          <a class="footer__agreement-link" :href="agreements.agreement_link">{{ agreements.agreement }}</a>
-          <p v-html="agreements.site"></p>
+          <p class="footer__text">{{ agreements.when }}</p>
+          <p class="footer__text">{{ agreements.confidentiality_info }}</p>
+          <p class="footer__text">{{ agreements.copyright }}</p>
         </div>
       </div>
     </div>
@@ -22,100 +18,31 @@
 </template>
 
 <script>
-import Social from './Social.vue'
-import Contacts from './Contacts.vue'
-
 export default {
   data() {
     return {
       logo: {
-        logo: 'img/platforma-footer.png',
-        alt: 'logo',
-        info: 'АО «ПО «ПНСК»',
-        inn: 'ИНН: 4719016582 ',
+        logo: "img/logo-footer.png",
+        alt: "логотип petit marseillaise",
       },
       agreements: {
-        confidentiality: 'Политика конфеденциальности предоставляемых данных',
-        confidentiality_link: '#',
-        agreement: 'Пользовательское соглашение',
-        agreement_link: '#',
-        site: 'Сайт сделал: <a href="https://ra-studio.ru/">RA-Studio</s>',
+        when: "Общие сроки проведения акции с 01.06.2021-31.10.2021. включительно",
+        confidentiality_info:
+          "Сайт принадлежит компании ООО “Джонсон & Джонсон”, которая полностью отвечает за его содержимое. Сайт ориентирован на физических и юридических лиц из России.",
+        copyright: "© ООО 'Джонсон & Джонсон', Россия, 2021 г",
       },
-      contacts: [
-        {
-          name: '+7 (812) 336-45-00',
-          href: 'tel:+7(812)336-45-00',
-          aria: 'phone',
-          id: '#phone',
-          width: 15,
-          height: 15,
-        },
-        {
-          name: 'sale@plat-forma.pro',
-          href: 'mailto:sale@plat-forma.pro',
-          aria: 'email',
-          id: '#email',
-          width: 15,
-          height: 12,
-        },
-        {
-          name: 'г. Санкт-Петербург, Красное Село, улица Восстановления, 66',
-          href: 'https://yandex.ru/maps/-/CCUaaOs7CB',
-          aria: 'address',
-          id: '#address',
-          width: 12,
-          height: 17,
-        },
-      ],
-      socials: [
-        {
-          id: '#vk',
-          width: 23,
-          height: 14,
-          href: '#vk',
-          aria: 'vk',
-          class: 'footer__social-icon--vk',
-        },
-        {
-          id: '#fb',
-          width: 11,
-          height: 24,
-          href: '#fb',
-          aria: 'fb',
-          class: 'footer__social-icon--fb',
-        },
-        {
-          id: '#whatsapp',
-          width: 24,
-          height: 24,
-          href: '#whatsapp',
-          aria: 'whatsapp',
-          class: 'footer__social-icon--wp',
-        },
-        {
-          id: '#telegram',
-          width: 24,
-          height: 20,
-          href: '#telegram',
-          aria: 'telegram',
-          class: 'footer__social-icon--tg',
-        },
-      ],
-    }
+    };
   },
   computed: {},
-  components: {
-    Social,
-    Contacts,
-  },
+  components: {},
   methods: {
     async goTo(link) {
       if (!this.$scrollTo(link)) {
         setTimeout(() => {
-          this.$scrollTo(link)
-        }, 500)
+          this.$scrollTo(link);
+        }, 500);
       }
     },
   },
-}
+};
 </script>

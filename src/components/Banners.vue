@@ -1,5 +1,5 @@
 <template>
-  <section class="banners">
+  <section class="banners" id="learn">
     <div class="banners__inner">
       <div class="banners__tree">
         <img :src="tree_src" alt="" />
