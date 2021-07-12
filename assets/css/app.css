@@ -1905,25 +1905,27 @@ main {
 .products__picture-wrapper .swiper-container {
   width: 70%;
 }
-.products__picture-wrapper .swiper-button-prev:after,
-.products__picture-wrapper .swiper-button-next:after {
+.products__picture-wrapper .products-button-prev:after,
+.products__picture-wrapper .products-button-next:after {
   display: none;
 }
-.products__picture-wrapper .swiper-button-prev,
-.products__picture-wrapper .swiper-button-next {
+.products__picture-wrapper .products-button-prev,
+.products__picture-wrapper .products-button-next {
   width: 55px;
   height: 55px;
   background-color: #FFE927;
   border-radius: 50%;
   top: 43%;
+  position: absolute;
+  z-index: 3;
 }
-.products__picture-wrapper .swiper-button-prev {
+.products__picture-wrapper .products-button-prev {
   left: 113px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.products__picture-wrapper .swiper-button-next {
+.products__picture-wrapper .products-button-next {
   right: 113px;
 }
 .products__picture-wrapper .swiper-pagination {

@@ -304,7 +304,7 @@ var _components$data$comp;function _defineProperty(obj,key,value){if(key in obj)
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = (_components$data$comp={components:{},data:function data(){return{SliderOptions:{slidesPerView:3,spaceBetween:20,breakpoints:{320:{slidesPerView:1,spaceBetween:20},768:{slidesPerView:2,spaceBetween:30},1024:{slidesPerView:3,spaceBetween:40}},pagination:{el:".swiper-pagination",clickable:true},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}},slides:[{img:"img/gel-1.png",alt:"гель для душа",width:190,height:359},{img:"img/gel-2.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359}],title:"Продукты"};},computed:{}},_defineProperty(_components$data$comp,"components",{}),_defineProperty(_components$data$comp,"methods",{}),_components$data$comp);
+/* harmony default export */ __webpack_exports__["default"] = (_components$data$comp={components:{},data:function data(){return{SliderOptions:{slidesPerView:3,spaceBetween:20,breakpoints:{320:{slidesPerView:1,spaceBetween:20},768:{slidesPerView:2,spaceBetween:30},1024:{slidesPerView:3,spaceBetween:40}},pagination:{el:".swiper-pagination",clickable:true},navigation:{nextEl:".products-button-next",prevEl:".products-button-prev"}},slides:[{img:"img/gel-1.png",alt:"гель для душа",width:190,height:359},{img:"img/gel-2.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359}],title:"Продукты"};},computed:{}},_defineProperty(_components$data$comp,"components",{}),_defineProperty(_components$data$comp,"methods",{}),_components$data$comp);
 
 /***/ }),
 
@@ -12686,7 +12686,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "button swiper-button-next",
+              staticClass: "button products-button-next",
               attrs: { slot: "button-next" },
               slot: "button-next"
             },
@@ -12705,7 +12705,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "button swiper-button-prev",
+              staticClass: "button products-button-prev",
               attrs: { slot: "button-prev" },
               slot: "button-prev"
             },

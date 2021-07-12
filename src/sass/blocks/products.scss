@@ -30,23 +30,25 @@
     .swiper-wrapper {
         // overflow: hidden;
     }
-    .swiper-button-prev:after,
-    .swiper-button-next:after {
+    .products-button-prev:after,
+    .products-button-next:after {
         display: none;
     }
-    .swiper-button-prev,
-    .swiper-button-next {
+    .products-button-prev,
+    .products-button-next {
         width: 55px;
         height: 55px;
         background-color: $color-main-yellow;
         border-radius: 50%;
         top: 43%;
+        position: absolute;
+        z-index: 3;
     }
-    .swiper-button-prev {
+    .products-button-prev {
         left: 113px;
         transform: rotate(180deg);
     }
-    .swiper-button-next {
+    .products-button-next {
         right: 113px;
     }
     .swiper-pagination {

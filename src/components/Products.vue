@@ -25,12 +25,12 @@
           </swiper-slide>
         </swiper>
         <div class="swiper-pagination" slot="pagination"></div>
-        <button class="button swiper-button-next" slot="button-next">
+        <button class="button products-button-next" slot="button-next">
           <svg class="icon" width="20" height="27" aria-hidden="true">
             <use xlink:href="#swiper-arrow"></use>
           </svg>
         </button>
-        <button class="button swiper-button-prev" slot="button-prev">
+        <button class="button products-button-prev" slot="button-prev">
           <svg class="icon" width="20" height="27" aria-hidden="true">
             <use xlink:href="#swiper-arrow"></use>
           </svg>
@@ -67,8 +67,8 @@ export default {
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".products-button-next",
+          prevEl: ".products-button-prev",
         },
       },
       slides: [
