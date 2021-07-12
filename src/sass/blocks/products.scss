@@ -10,6 +10,12 @@
         background-position: 105px -20px;
         width: 660px;
         margin: 0 auto;
+        @media (max-width: $mobiles-max) {
+            background-size: 250px;
+            background-position: center;
+            min-height: 125px;
+            width: auto;
+        }
     }
 }
 
@@ -19,10 +25,10 @@
     position: relative;
     .swiper-container {
         width: 70%;
-        overflow: hidden;
+        // overflow: hidden;
     }
     .swiper-wrapper {
-        overflow: hidden;
+        // overflow: hidden;
     }
     .swiper-button-prev:after,
     .swiper-button-next:after {

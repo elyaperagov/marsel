@@ -8,6 +8,20 @@
     transition: $transition-settings;
     cursor: pointer;
     flex-shrink: 0;
+    &--play {
+        position: absolute;
+        width: 152px;
+        height: 127px;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        @media (max-width: $mobiles-max) {
+            width: 102px;
+            height: 86px;
+        }
+    }
     &--toggle {
         position: absolute;
         width: 30px;
@@ -21,6 +35,9 @@
         top: 30px;
         padding: 0;
         z-index: 2;
+        @media (max-width: $tablets-max) {
+            top: 10px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -40,7 +57,7 @@
             transition: $transition-settings;
         }
         &.close {
-            background-color: $color-white;
+            background-color: transparent;
             span {
                 background-color: $color-main-green;
                 height: 5px;

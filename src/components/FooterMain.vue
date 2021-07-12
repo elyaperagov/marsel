@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="container">
+    <div class="container--wide">
       <div class="footer__inner">
         <div class="footer__block footer__block--logo">
           <a :href="'home.html'" class="footer__logo-link">

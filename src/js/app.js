@@ -13,7 +13,7 @@ import Products from '../components/Products.vue'
 
 import Helpers from '../lib/Helpers.js'
 
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */ )
 
 Vue.use(VueTheMask)
 Vue.use(Helpers)
@@ -41,14 +41,61 @@ const app = new Vue({
     el: '#app',
     data() {
         return {
+            window_top: 0,
+            header_top: 0,
+            header_height: 183,
+            offsetLeft: 0,
+            tabletBreakpoint: 1025,
+            mobileBreakpoint: 767,
 
+            menuShown: false,
+            width: null,
+            height: null,
+            timeout_stick: null,
         }
     },
     watch: {},
-    computed: {},
-    created() {},
-    mounted() {},
-    methods: {},
+    async created() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+    },
+    computed: {
+        isTablet() {
+            return this.width <= this.tabletBreakpoint;
+        },
+        isMobile() {
+            return this.width <= this.mobileBreakpoint;
+        }
+    },
+    mounted() {
+        this.addListeners();
+    },
+    methods: {
+
+        addListeners() {
+            window.addEventListener('scroll', this.onScroll);
+            window.addEventListener('resize', this.onResize);
+            window.onload = () => {
+                setTimeout(() => {
+                    this.getOffsetLeft();
+                }, 500);
+            }
+        },
+        onScroll(e) {
+            this.window_top = window.pageYOffset;
+        },
+        onResize() {
+            this.width = window.innerWidth;
+            this.height = window.innerHeight;
+            this.getOffsetLeft();
+            this.menuShown = false;
+        },
+        getOffsetLeft() {
+            try {
+                this.offsetLeft = document.querySelector('footer .container').offsetLeft + document.querySelector('footer .container').offsetWidth;
+            } catch (error) {}
+        },
+    },
     components: {
         Sprite,
         HeaderMain,

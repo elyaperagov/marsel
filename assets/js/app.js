@@ -34,7 +34,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{title:"Преимущества Био-линейки",items:[{img_src:"img/bio.png"},{img_src:"img/glycerin.png"},{img_src:"img/certified.png"},{img_src:"img/recyclable.png"}]};},computed:{},components:{},methods:{}});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{title:"Преимущества Био-линейки",SliderOptions:{slidesPerView:1,spaceBetween:20,pagination:{el:".swiper-pagination",clickable:true},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}},slides:[{img:"img/drop.png",alt:"гель для душа",width:190,height:359},{img:"img/leafs.png",alt:"гель для душа",width:790,height:359},{img:"img/earth.png",alt:"гель для душа",width:790,height:359},{img:"img/recycle.png",alt:"гель для душа",width:790,height:359}],items:[{img_src:"img/bio.png"},{img_src:"img/glycerin.png"},{img_src:"img/certified.png"},{img_src:"img/recyclable.png"}]};},computed:{},components:{},methods:{}});
 
 /***/ }),
 
@@ -69,7 +103,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Banners",components:{},data:function data(){return{title:"открой для себя природу <p>прованса</p>",tree_src:"img/tree.png",phone_src:"img/phone.png",banners_text:"Наведи камеру на упаковку и узнай больше о БИО - линейкe ",banners_company:"Le Petit Marseillais"};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Banners",components:{},data:function data(){return{icon:{width:"152",height:"126",id:"#play"},title:"открой для себя природу <p>прованса</p>",tree_src:"img/tree.png",phone_src:"img/phone.png",banners_text:"Наведи камеру на упаковку и узнай больше о БИО - линейкe ",banners_company:"Le Petit Marseillais"};},computed:{},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){},methods:{}});
 
 /***/ }),
 
@@ -190,26 +245,11 @@ function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var inf
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{menuShown:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,logo:{logo_desk:"img/logo.png",logo_mob:"img/logo-mob.png"// logo_width: 306,
+/* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{logo:{logo_desk:"img/logo.png",logo_mob:"img/logo-mob.png"// logo_width: 306,
 // logo_height: 287,
 // logo_width_mob: 126,
 // logo_height_mob: 118,
-},questionPopupShow:false,popup_text:"В случае возникновения вопросов обращайтесь по почте: ********@*****.com",menu:[{name:"Узнай о БИО-линейке",link:"#learn"},{name:"Преимущества Био-линейки",link:"#advantages"},{name:"Продукты",link:"#products"},{name:"Вопросы",link:"#questions",icon:{width:"20",height:"26",id:"#question"}}]};},computed:{},mounted:function mounted(){window.addEventListener("resize",this.handleResize);this.toggleMobile();},beforeDestroy:function beforeDestroy(){window.removeEventListener("resize",this.handleResize);this.toggleMobile();},methods:{goTo:function goTo(link){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!_this.$scrollTo(link)){setTimeout(function(){_this.$scrollTo(link);},500);}case 1:case"end":return _context.stop();}}},_callee);}))();},showQuestionsPopup:function showQuestionsPopup(){this.questionPopupShow=!this.questionPopupShow;},menuToggle:function menuToggle(){this.menuShown=!this.menuShown;document.body.classList.toggle("scroll-off");},menuClose:function menuClose(){if(this.menuShown){this.menuShown=false;document.body.classList.remove("scroll-off");}},toggleMobile:function toggleMobile(){if(window.innerWidth<=this.mobileBreakpoint){this.isMobile=true;}else{this.isMobile=false;}},// handleScroll() {
-//   this.menuClose()
-// },
-handleResize:function handleResize(){this.toggleMobile(),this.menuClose();}},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.menuClose(true);}});},components:{}});
+},questionPopupShow:false,popup_text:"В случае возникновения вопросов обращайтесь по почте: ********@*****.com",menu:[{name:"Узнай о БИО-линейке",link:"#learn"},{name:"Преимущества Био-линейки",link:"#advantages"},{name:"Продукты",link:"#products"},{name:"Вопросы",link:"#questions",icon:{width:"20",height:"26",id:"#question"}}]};},computed:{},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){},methods:{goTo:function goTo(link){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!_this.$scrollTo(link)){setTimeout(function(){_this.$scrollTo(link);},500);}case 1:case"end":return _context.stop();}}},_callee);}))();},showQuestionsPopup:function showQuestionsPopup(){this.questionPopupShow=!this.questionPopupShow;},menuToggle:function menuToggle(){this.$root.menuShown=!this.$root.menuShown;document.body.classList.toggle("scroll-off");},menuClose:function menuClose(){if(this.menuShown){this.$root.menuShown=false;document.body.classList.remove("scroll-off");}}},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.menuClose(true);}});},components:{}});
 
 /***/ }),
 
@@ -264,7 +304,7 @@ var _components$data$comp;function _defineProperty(obj,key,value){if(key in obj)
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = (_components$data$comp={components:{},data:function data(){return{SliderOptions:{slidesPerView:3,spaceBetween:20,pagination:{el:".swiper-pagination",clickable:true},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}},slides:[{img:"img/gel-1.png",alt:"гель для душа",width:190,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359}],title:"Продукты"};},computed:{}},_defineProperty(_components$data$comp,"components",{}),_defineProperty(_components$data$comp,"methods",{}),_components$data$comp);
+/* harmony default export */ __webpack_exports__["default"] = (_components$data$comp={components:{},data:function data(){return{SliderOptions:{slidesPerView:3,spaceBetween:20,breakpoints:{320:{slidesPerView:1,spaceBetween:20},768:{slidesPerView:2,spaceBetween:30},1024:{slidesPerView:3,spaceBetween:40}},pagination:{el:".swiper-pagination",clickable:true},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}},slides:[{img:"img/gel-1.png",alt:"гель для душа",width:190,height:359},{img:"img/gel-2.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359},{img:"img/gel-1.png",alt:"гель для душа",width:790,height:359}],title:"Продукты"};},computed:{}},_defineProperty(_components$data$comp,"components",{}),_defineProperty(_components$data$comp,"methods",{}),_components$data$comp);
 
 /***/ }),
 
@@ -277,185 +317,6 @@ var _components$data$comp;function _defineProperty(obj,key,value){if(key in obj)
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -12299,16 +12160,108 @@ var render = function() {
       _c("div", { staticClass: "container" }, [
         _c("h2", [_vm._v(_vm._s(_vm.title))]),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "advantages__items" },
-          _vm._l(_vm.items, function(item, i) {
-            return _c("div", { key: i, staticClass: "advantages__item" }, [
-              _c("img", { attrs: { src: item.img_src, alt: "" } })
-            ])
-          }),
-          0
-        )
+        !_vm.$root.isMobile
+          ? _c(
+              "div",
+              { staticClass: "advantages__items" },
+              _vm._l(_vm.items, function(item, i) {
+                return _c("div", { key: i, staticClass: "advantages__item" }, [
+                  _c("img", { attrs: { src: item.img_src, alt: "" } })
+                ])
+              }),
+              0
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.$root.isMobile
+          ? _c(
+              "div",
+              { staticClass: "advantages__items" },
+              [
+                _c(
+                  "swiper",
+                  {
+                    ref: "swiper",
+                    staticClass: "swiper advantages__swiper",
+                    attrs: { options: _vm.SliderOptions }
+                  },
+                  _vm._l(_vm.slides, function(slide, b) {
+                    return _c(
+                      "swiper-slide",
+                      { key: b, staticClass: "products__item" },
+                      [
+                        _c("div", { staticClass: "products__image" }, [
+                          _c("img", {
+                            attrs: {
+                              loading: "lazy",
+                              src: slide.img,
+                              alt: slide.alt,
+                              width: slide.img_width,
+                              height: slide.img_height
+                            }
+                          })
+                        ])
+                      ]
+                    )
+                  }),
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "swiper-pagination",
+                  attrs: { slot: "pagination" },
+                  slot: "pagination"
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "button swiper-button-next",
+                    attrs: { slot: "button-next" },
+                    slot: "button-next"
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "icon",
+                        attrs: {
+                          width: "20",
+                          height: "27",
+                          "aria-hidden": "true"
+                        }
+                      },
+                      [_c("use", { attrs: { "xlink:href": "#swiper-arrow" } })]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "button swiper-button-prev",
+                    attrs: { slot: "button-prev" },
+                    slot: "button-prev"
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "icon",
+                        attrs: {
+                          width: "20",
+                          height: "27",
+                          "aria-hidden": "true"
+                        }
+                      },
+                      [_c("use", { attrs: { "xlink:href": "#swiper-arrow" } })]
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          : _vm._e()
       ])
     ]
   )
@@ -12344,9 +12297,55 @@ var render = function() {
       _c("h1", { domProps: { innerHTML: _vm._s(_vm.title) } }),
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "banners__phone" }, [
-          _c("img", { attrs: { src: _vm.phone_src, alt: "" } })
-        ]),
+        !_vm.$root.isMobile
+          ? _c("div", { staticClass: "banners__phone" }, [
+              _c("img", { attrs: { src: _vm.phone_src, alt: "" } }),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button button--play",
+                  attrs: { type: "button" }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon",
+                      attrs: {
+                        width: _vm.icon.width,
+                        height: _vm.icon.height,
+                        "aria-hidden": "true"
+                      }
+                    },
+                    [_c("use", { attrs: { "xlink:href": _vm.icon.id } })]
+                  )
+                ]
+              )
+            ])
+          : _c("div", { staticClass: "banners__phone" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button button--play",
+                  attrs: { type: "button" }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon",
+                      attrs: {
+                        width: _vm.icon.width,
+                        height: _vm.icon.height,
+                        "aria-hidden": "true"
+                      }
+                    },
+                    [_c("use", { attrs: { "xlink:href": _vm.icon.id } })]
+                  )
+                ]
+              )
+            ]),
         _vm._v(" "),
         _c("div", { staticClass: "banners__info" }, [
           _c("p", [
@@ -12381,7 +12380,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("footer", { staticClass: "footer" }, [
-    _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "container--wide" }, [
       _c("div", { staticClass: "footer__inner" }, [
         _c("div", { staticClass: "footer__block footer__block--logo" }, [
           _c(
@@ -12440,109 +12439,112 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "header",
-    {
-      staticClass: "header container--wide",
-      style: { top: _vm.$root.header_top + "px" }
-    },
+    { staticClass: "header", style: { top: _vm.$root.header_top + "px" } },
     [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "header__top" }, [
-          _c("div", { staticClass: "header__logo" }, [
-            _c(
-              "a",
-              {
-                staticClass: "header__logo-link",
-                attrs: { href: "home.html" }
-              },
-              [
-                _c("img", {
-                  attrs: {
-                    loading: "lazy",
-                    src: !_vm.isMobile ? _vm.logo.logo_desk : _vm.logo.logo_mob,
-                    alt: "Логотип Le Petit Marsellaise"
-                  }
-                })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          !_vm.isMobile
-            ? _c(
-                "ul",
-                { staticClass: "header__menu" },
-                _vm._l(_vm.menu, function(item, i) {
-                  return _c(
-                    "li",
-                    { key: i, staticClass: "header__menu-item" },
-                    [
-                      _c(
-                        "a",
-                        {
-                          attrs: { href: item.link },
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              return _vm.goTo(item.link)
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n            " +
-                              _vm._s(item.name) +
-                              "\n            "
-                          ),
-                          item.name === "Вопросы"
-                            ? [
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass: "header__menu-svg",
-                                    on: { click: _vm.showQuestionsPopup }
-                                  },
-                                  [
-                                    _c(
-                                      "svg",
-                                      {
-                                        staticClass: "icon",
-                                        attrs: {
-                                          width: item.icon.width,
-                                          height: item.icon.height,
-                                          "aria-hidden": "true"
-                                        }
-                                      },
-                                      [
-                                        _c("use", {
-                                          attrs: { "xlink:href": item.icon.id }
-                                        })
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ]
-                            : _vm._e()
-                        ],
-                        2
-                      )
-                    ]
-                  )
-                }),
-                0
+      _c("div", { staticClass: "header__wrapper container--wide" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "header__top" }, [
+            _c("div", { staticClass: "header__logo" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "header__logo-link",
+                  attrs: { href: "home.html" }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      loading: "lazy",
+                      src: !_vm.$root.isTablet
+                        ? _vm.logo.logo_desk
+                        : _vm.logo.logo_mob,
+                      alt: "Логотип Le Petit Marsellaise"
+                    }
+                  })
+                ]
               )
-            : _vm._e(),
-          _vm._v(" "),
-          this.questionPopupShow
-            ? _c("div", { staticClass: "header__popup" }, [
-                _vm._v("\n        " + _vm._s(_vm.popup_text) + "\n      ")
-              ])
-            : _vm._e()
+            ]),
+            _vm._v(" "),
+            !_vm.$root.isTablet
+              ? _c(
+                  "ul",
+                  { staticClass: "header__menu" },
+                  _vm._l(_vm.menu, function(item, i) {
+                    return _c(
+                      "li",
+                      { key: i, staticClass: "header__menu-item" },
+                      [
+                        _c(
+                          "a",
+                          {
+                            attrs: { href: item.link },
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.goTo(item.link)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(item.name) +
+                                "\n              "
+                            ),
+                            item.name === "Вопросы"
+                              ? [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "header__menu-svg",
+                                      on: { click: _vm.showQuestionsPopup }
+                                    },
+                                    [
+                                      _c(
+                                        "svg",
+                                        {
+                                          staticClass: "icon",
+                                          attrs: {
+                                            width: item.icon.width,
+                                            height: item.icon.height,
+                                            "aria-hidden": "true"
+                                          }
+                                        },
+                                        [
+                                          _c("use", {
+                                            attrs: {
+                                              "xlink:href": item.icon.id
+                                            }
+                                          })
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              : _vm._e()
+                          ],
+                          2
+                        )
+                      ]
+                    )
+                  }),
+                  0
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            this.questionPopupShow
+              ? _c("div", { staticClass: "header__popup" }, [
+                  _vm._v("\n          " + _vm._s(_vm.popup_text) + "\n        ")
+                ])
+              : _vm._e()
+          ])
         ]),
         _vm._v(" "),
         _c(
           "button",
           {
             staticClass: "button button--toggle",
-            class: { close: !_vm.menuShown },
+            class: { close: !_vm.$root.menuShown },
             on: {
               click: function($event) {
                 return _vm.menuToggle()
@@ -12554,7 +12556,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("transition", { attrs: { name: "fade" } }, [
-        _vm.isMobile
+        _vm.$root.isTablet
           ? _c(
               "div",
               {
@@ -12562,8 +12564,8 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.menuShown,
-                    expression: "menuShown"
+                    value: _vm.$root.menuShown,
+                    expression: "$root.menuShown"
                   }
                 ],
                 staticClass: "header__mobile-wrapper"
@@ -12578,73 +12580,33 @@ var render = function() {
                   }
                 }),
                 _vm._v(" "),
-                _c("div", { staticClass: "header__mobile" }, [
-                  _c(
-                    "ul",
-                    { staticClass: "header__menu" },
-                    _vm._l(_vm.menu, function(item, i) {
-                      return _c(
-                        "li",
-                        { key: i, staticClass: "header__menu-item" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              attrs: { href: item.link },
-                              on: {
-                                click: function($event) {
-                                  $event.preventDefault()
-                                  _vm.goTo(_vm.menu.link), _vm.menuClose()
+                _c("div", { staticClass: "container" }, [
+                  _c("div", { staticClass: "header__mobile" }, [
+                    _c(
+                      "ul",
+                      { staticClass: "header__menu" },
+                      _vm._l(_vm.menu, function(item, i) {
+                        return _c(
+                          "li",
+                          { key: i, staticClass: "header__menu-item" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                attrs: { href: item.link },
+                                on: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    _vm.goTo(_vm.menu.link), _vm.menuClose()
+                                  }
                                 }
-                              }
-                            },
-                            [_vm._v("\n              " + _vm._s(item.name))]
-                          )
-                        ]
-                      )
-                    }),
-                    0
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "header__contacts" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "header__phone",
-                        attrs: { href: "tel:" + _vm.phone_href },
-                        on: {
-                          click: function($event) {
-                            $event.preventDefault()
-                            return _vm.menuClose()
-                          }
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n            " + _vm._s(_vm.phone) + "\n          "
+                              },
+                              [_vm._v("\n                " + _vm._s(item.name))]
+                            )
+                          ]
                         )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "header__contact-us",
-                        attrs: { href: _vm.contact_link },
-                        on: {
-                          click: function($event) {
-                            $event.preventDefault()
-                            _vm.goTo(_vm.contact_link), _vm.menuClose()
-                          }
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n            " +
-                            _vm._s(_vm.contact_us) +
-                            "\n          "
-                        )
-                      ]
+                      }),
+                      0
                     )
                   ])
                 ])
@@ -12823,6 +12785,27 @@ var render = function() {
           "symbol",
           {
             attrs: {
+              id: "play",
+              viewBox: "0 0 153 128",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("path", {
+              attrs: {
+                d:
+                  "M57.0406 35.9521V91.5376C57.0406 94.7248 60.5138 96.6754 63.2137 95.018L104.524 69.6221C105.526 69.0075 106.354 68.1441 106.928 67.1148C107.502 66.0856 107.804 64.9251 107.804 63.7448C107.804 62.5645 107.502 61.404 106.928 60.3748C106.354 59.3456 105.526 58.4822 104.524 57.8676L63.201 32.4844C62.5864 32.1093 61.8838 31.9052 61.165 31.8931C60.4462 31.8809 59.7371 32.0612 59.1103 32.4153C58.4835 32.7694 57.9616 33.2847 57.5979 33.9084C57.2343 34.5321 57.0419 35.2418 57.0406 35.9648V35.9521ZM31.6892 0C23.2847 0 15.2244 3.35798 9.28156 9.33521C3.33868 15.3125 0 23.4193 0 31.8724V95.6172C0 104.07 3.33868 112.177 9.28156 118.154C15.2244 124.132 23.2847 127.49 31.6892 127.49H120.419C128.824 127.49 136.884 124.132 142.827 118.154C148.77 112.177 152.108 104.07 152.108 95.6172V31.8724C152.108 23.4193 148.77 15.3125 142.827 9.33521C136.884 3.35798 128.824 0 120.419 0H31.6892ZM12.6757 31.8724C12.6757 26.8006 14.6789 21.9364 18.2446 18.3501C21.8104 14.7638 26.6465 12.749 31.6892 12.749H120.419C125.462 12.749 130.298 14.7638 133.864 18.3501C137.429 21.9364 139.433 26.8006 139.433 31.8724V95.6172C139.433 100.689 137.429 105.553 133.864 109.14C130.298 112.726 125.462 114.741 120.419 114.741H31.6892C26.6465 114.741 21.8104 112.726 18.2446 109.14C14.6789 105.553 12.6757 100.689 12.6757 95.6172V31.8724Z",
+                fill: "#2C7135"
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "symbol",
+          {
+            attrs: {
               id: "swiper-arrow",
               viewBox: "0 0 13 23",
               fill: "none",
@@ -12866,383 +12849,6 @@ var render = function() {
                 d:
                   "M63.7071 50.7071C64.0976 50.3166 64.0976 49.6834 63.7071 49.2929L57.3431 42.9289C56.9526 42.5384 56.3195 42.5384 55.9289 42.9289C55.5384 43.3195 55.5384 43.9526 55.9289 44.3431L61.5858 50L55.9289 55.6569C55.5384 56.0474 55.5384 56.6805 55.9289 57.0711C56.3195 57.4616 56.9526 57.4616 57.3431 57.0711L63.7071 50.7071ZM38 51L63 51V49L38 49V51Z",
                 fill: "white"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "olive-branches",
-              viewBox: "0 0 45 45",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M4.91954 17.4753C4.91954 17.4753 6.30946 15.6839 5.41056 13.1959C4.50852 10.7095 2.40794 9.76514 2.40794 9.76514C2.40794 9.76514 0.836042 11.9001 1.71455 14.3238C2.59149 16.749 4.91954 17.4753 4.91954 17.4753Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M8.77718 18.7476C8.77718 18.7476 11.2072 18.5531 12.5987 16.3804C13.9902 14.2093 12.9266 11.7809 12.9266 11.7809C12.9266 11.7809 10.6707 12.239 9.24153 14.4681C7.81396 16.6957 8.77718 18.7476 8.77718 18.7476Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M9.02343 21.6183C7.89863 24.0137 9.1207 25.9244 9.1207 25.9244C9.1207 25.9244 11.5068 25.413 12.6018 23.0804C13.6952 20.7446 12.3241 18.4762 12.3241 18.4762C12.3241 18.4762 10.1482 19.2229 9.02343 21.6183Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M14.5157 23.5479C14.5157 23.5479 12.4183 24.4985 11.5241 26.9865C10.6299 29.4791 12.0245 31.2643 12.0245 31.2643C12.0245 31.2643 14.3494 30.5317 15.2216 28.105C16.0923 25.6782 14.5157 23.5479 14.5157 23.5479Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M16.2633 36.6497C16.2633 36.6497 18.2807 35.2771 18.4172 32.7028C18.5521 30.127 16.4264 28.5426 16.4264 28.5426C16.4264 28.5426 14.6914 30.0564 14.5517 32.6981C14.4137 35.3383 16.2633 36.6497 16.2633 36.6497Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M8.01794 12.6814C8.01794 12.6814 10.1687 11.9629 10.7994 9.39494C11.4316 6.82696 10.2095 4.87549 10.2095 4.87549C10.2095 4.87549 7.7183 5.77907 7.10178 8.28429C6.48682 10.788 8.01794 12.6814 8.01794 12.6814Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M4.918 22.9361C4.918 22.9361 5.7165 20.8136 4.12421 18.7037C2.52877 16.5922 0.244654 16.3083 0.244654 16.3083C0.244654 16.3083 -0.627579 18.8119 0.925498 20.8701C2.47857 22.9298 4.918 22.9361 4.918 22.9361Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M6.70012 28.5363C6.70012 28.5363 7.00602 26.2899 4.98546 24.5863C2.96175 22.8811 0.671356 23.1133 0.671356 23.1133C0.671356 23.1133 0.376428 25.7487 2.3468 27.41C4.3203 29.0697 6.70012 28.5363 6.70012 28.5363Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M9.41412 33.1672C9.41412 33.1672 9.02978 30.9333 6.58564 29.9231C4.13994 28.9097 2.02838 29.8243 2.02838 29.8243C2.02838 29.8243 2.54607 32.4252 4.92746 33.4135C7.30884 34.397 9.41412 33.1672 9.41412 33.1672Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M10.6001 35.0904C8.05242 34.3782 6.06323 35.5375 6.06323 35.5375C6.06323 35.5375 6.88683 38.0569 9.36862 38.7518C11.8535 39.4468 13.7957 37.9737 13.7957 37.9737C13.7957 37.9737 13.1478 35.8011 10.6001 35.0904Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M8.28307 14.2124L7.15042 13.6555C7.09081 13.7794 1.26442 26.155 17.636 40.1495L18.4549 39.191C2.86769 25.8648 8.05403 14.6815 8.28307 14.2124Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M40.0804 17.4518C40.0804 17.4518 38.6889 15.6604 39.5894 13.174C40.4883 10.686 42.5904 9.74164 42.5904 9.74164C42.5904 9.74164 44.1607 11.8751 43.2822 14.3003C42.4084 16.7255 40.0804 17.4518 40.0804 17.4518Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M36.2228 18.7241C36.2228 18.7241 33.7928 18.528 32.3997 16.3569C31.0082 14.1858 32.0718 11.7574 32.0718 11.7574C32.0718 11.7574 34.3277 12.2155 35.7584 14.4431C37.186 16.6722 36.2228 18.7241 36.2228 18.7241Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M35.9764 21.5932C37.1012 23.9887 35.8792 25.8993 35.8792 25.8993C35.8792 25.8993 33.4931 25.3879 32.3965 23.0553C31.3046 20.7195 32.6742 18.4511 32.6742 18.4511C32.6742 18.4511 34.8516 19.1994 35.9764 21.5932Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M30.4842 23.5243C30.4842 23.5243 32.5801 24.4734 33.4758 26.966C34.37 29.4571 32.9738 31.2423 32.9738 31.2423C32.9738 31.2423 30.6505 30.5082 29.7783 28.0814C28.906 25.6546 30.4842 23.5243 30.4842 23.5243Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M28.7335 36.6246C28.7335 36.6246 26.7177 35.2535 26.5812 32.6777C26.4463 30.1019 28.5735 28.5159 28.5735 28.5159C28.5735 28.5159 30.3054 30.0297 30.4466 32.673C30.5862 35.3163 28.7335 36.6246 28.7335 36.6246Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M36.9789 12.6579C36.9789 12.6579 34.8313 11.9394 34.2007 9.37142C33.5684 6.80345 34.7921 4.8504 34.7921 4.8504C34.7921 4.8504 37.2833 5.75398 37.8982 8.26078C38.5132 10.7629 36.9789 12.6579 36.9789 12.6579Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M40.0819 22.9125C40.0819 22.9125 39.2834 20.7901 40.8742 18.6801C42.4696 16.5687 44.7553 16.2847 44.7553 16.2847C44.7553 16.2847 45.6291 18.7884 44.0744 20.8465C42.5198 22.9062 40.0819 22.9125 40.0819 22.9125Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M38.2998 28.5128C38.2998 28.5128 37.9923 26.2664 40.0145 24.5597C42.0382 22.8561 44.3286 23.0882 44.3286 23.0882C44.3286 23.0882 44.6235 25.7252 42.6516 27.3849C40.6796 29.0446 38.2998 28.5128 38.2998 28.5128Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M35.5842 33.1437C35.5842 33.1437 35.9701 30.9083 38.4143 29.8965C40.8616 28.8831 42.9715 29.7976 42.9715 29.7976C42.9715 29.7976 42.4539 32.3986 40.0725 33.3853C37.6895 34.3736 35.5842 33.1437 35.5842 33.1437Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M34.3982 35.0669C36.9459 34.3563 38.9367 35.514 38.9367 35.514C38.9367 35.514 38.1146 38.0318 35.6313 38.7314C33.1479 39.4232 31.2058 37.9502 31.2058 37.9502C31.2058 37.9502 31.8521 35.7791 34.3982 35.0669Z",
-                fill: "#A8A8A8"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M36.7154 14.189L37.8511 13.6321C37.9108 13.756 43.7372 26.1316 27.364 40.1244L26.5466 39.166C42.1307 25.8429 36.9444 14.6564 36.7154 14.189Z",
-                fill: "#A8A8A8"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "file",
-              viewBox: "0 0 20 19",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M18.487 1.51304C16.4696 -0.504348 13.1981 -0.504348 11.1808 1.51304L1.13524 11.5585C-0.378414 13.0722 -0.378414 15.5248 1.13524 17.0385C2.38285 18.2861 4.26462 18.4876 5.73568 17.6778C5.88935 17.6701 6.04046 17.612 6.15802 17.4957L16.2035 7.45022C17.2122 6.44155 17.2122 4.80646 16.2035 3.7978C15.1948 2.78913 13.5598 2.78913 12.5511 3.7978L4.33178 12.0171C4.07991 12.2689 4.07991 12.6783 4.33178 12.9301C4.58364 13.182 4.99306 13.182 5.24487 12.9301L13.4642 4.71089C13.9692 4.2059 14.7867 4.2059 15.2904 4.71089C15.7954 5.21588 15.7954 6.03339 15.2904 6.53713L5.70082 16.1267C4.69215 17.1353 3.05706 17.1353 2.04839 16.1267C1.03972 15.118 1.03972 13.4829 2.04839 12.4743L12.0939 2.42614C13.6075 0.91248 16.0601 0.91248 17.5739 2.42614C19.0875 3.93979 19.0875 6.3924 17.5739 7.90611L8.44146 17.0385C8.18959 17.2904 8.18959 17.6998 8.44146 17.9516C8.69333 18.2035 9.10274 18.2035 9.35455 17.9516L18.487 8.81921C20.5043 6.80187 20.5043 3.53044 18.487 1.51304Z",
-                fill: "#00A8D0"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "phone",
-              viewBox: "0 0 15 15",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M14.345 0H10.4148C10.0218 0 9.75983 0.262009 9.75983 0.655022C9.75983 1.04804 10.0218 1.31004 10.4148 1.31004H13.1659L9.56332 4.91266C9.36681 5.10917 9.36681 5.50218 9.56332 5.76419C9.69432 5.82969 9.89083 5.8952 10.0218 5.8952C10.1528 5.8952 10.3493 5.82969 10.4148 5.69869L13.69 2.42358V4.58515C13.69 4.97817 13.952 5.24017 14.345 5.24017C14.738 5.24017 15 4.97817 15 4.58515V0.655022C15 0.262009 14.738 0 14.345 0Z",
-                fill: "white"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M12.3799 15H12.1834C10.0873 14.738 7.99127 14.0175 6.22271 12.9039C4.58515 11.8559 3.1441 10.4148 2.09607 8.77729C0.917031 7.00873 0.196507 4.91266 0 2.81659C0 2.29258 0.131004 1.76856 0.458515 1.37555C0.786026 0.982533 1.24454 0.720524 1.76856 0.655022H1.96507H3.93013C4.91266 0.655022 5.76419 1.37555 5.8952 2.35808C5.9607 2.9476 6.0917 3.53712 6.28821 4.06114C6.55022 4.78166 6.35371 5.56769 5.82969 6.15721L5.37118 6.61572C6.15721 7.79476 7.13974 8.84279 8.38428 9.62882L8.8428 9.17031C9.36681 8.64629 10.2183 8.44978 10.9389 8.71179C11.4629 8.9083 12.0524 9.0393 12.6419 9.1048C13.6245 9.23581 14.345 10.0873 14.345 11.0699V13.0349C14.345 13.559 14.1485 14.083 13.7555 14.4105C13.3624 14.738 12.9039 15 12.3799 15Z",
-                fill: "white"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "email",
-              viewBox: "0 0 15 12",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M1.4397 3.69889C1.62945 3.83522 2.20142 4.24013 3.15564 4.9134C4.10989 5.58668 4.84092 6.10508 5.34874 6.46865C5.40453 6.5085 5.52306 6.59513 5.7044 6.72865C5.88576 6.86227 6.03646 6.97024 6.15637 7.0526C6.27637 7.13494 6.42143 7.2273 6.59171 7.32954C6.76194 7.43169 6.92239 7.50853 7.07306 7.5594C7.22376 7.61068 7.36325 7.63609 7.49158 7.63609H7.49999H7.50844C7.63676 7.63609 7.77632 7.61065 7.92701 7.5594C8.07762 7.50853 8.23823 7.4316 8.4083 7.32954C8.57847 7.22718 8.72353 7.13491 8.84353 7.0526C8.96353 6.97024 9.11411 6.86227 9.29553 6.72865C9.47684 6.59501 9.59552 6.5085 9.65131 6.46865C10.1646 6.10508 11.4705 5.18174 13.5687 3.69871C13.976 3.40906 14.3163 3.05956 14.5897 2.65044C14.8633 2.2415 15 1.8125 15 1.36368C15 0.988627 14.8674 0.667573 14.6023 0.40055C14.3372 0.133467 14.0233 0 13.6607 0H1.33923C0.90957 0 0.578919 0.147706 0.347334 0.443118C0.115778 0.73859 0 1.10791 0 1.55106C0 1.90901 0.15351 2.29691 0.460385 2.7145C0.76723 3.13213 1.09378 3.46029 1.4397 3.69889Z",
-                fill: "white"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M14.1628 4.6106C12.3327 5.87186 10.943 6.85207 9.99444 7.55102C9.67636 7.78956 9.41833 7.97578 9.22017 8.10921C9.02201 8.24274 8.75847 8.3791 8.42917 8.51824C8.09998 8.65759 7.7932 8.72705 7.50855 8.72705H7.50001H7.4916C7.20701 8.72705 6.90005 8.65759 6.57086 8.51824C6.24168 8.3791 5.97796 8.24274 5.77985 8.10921C5.58181 7.97578 5.32369 7.78956 5.00565 7.55102C4.25226 6.98855 2.86556 6.00828 0.845509 4.6106C0.527347 4.39483 0.24554 4.14751 0 3.86914V10.6361C0 11.0113 0.131082 11.3322 0.393392 11.5992C0.655644 11.8664 0.970991 11.9999 1.33932 11.9999H13.6608C14.029 11.9999 14.3443 11.8664 14.6066 11.5992C14.869 11.3321 15 11.0113 15 10.6361V3.86914C14.76 4.14175 14.4811 4.38907 14.1628 4.6106Z",
-                fill: "white"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "address",
-              viewBox: "0 0 12 17",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M11.7165 4.23114C11.6545 4.00435 11.5286 3.76269 11.4354 3.55112C10.3208 0.936889 7.88541 0 5.91894 0C3.28646 0 0.38709 1.72271 0 5.27363V5.99911C0 6.02938 0.0106918 6.30135 0.0258789 6.43739C0.242873 8.12967 1.61113 9.9282 2.63301 11.6205C3.7324 13.4336 4.87317 15.2172 6.00338 17C6.70029 15.8366 7.39469 14.6578 8.07572 13.5245C8.26133 13.1919 8.47678 12.8595 8.66259 12.542C8.78644 12.3307 9.02303 12.1193 9.13113 11.9226C10.2305 9.95828 12 7.97877 12 6.02934V5.2285C12 5.01716 11.7316 4.27671 11.7165 4.23114ZM5.96713 7.873C5.19332 7.873 4.34632 7.49539 3.92825 6.45253C3.86596 6.28653 3.87098 5.95385 3.87098 5.92338V5.45493C3.87098 4.12549 5.02764 3.52092 6.03388 3.52092C7.27266 3.52092 8.23075 4.48816 8.23075 5.69714C8.23075 6.90608 7.20592 7.873 5.96713 7.873Z",
-                fill: "white"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "vk",
-              viewBox: "0 0 23 14",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d:
-                  "M11.253 13.9426H12.6278C12.6278 13.9426 13.0431 13.8975 13.2551 13.671C13.4502 13.4631 13.444 13.0727 13.444 13.0727C13.444 13.0727 13.4171 11.245 14.2733 10.9759C15.1173 10.7108 16.2011 12.7423 17.3498 13.5235C18.2185 14.1146 18.8785 13.985 18.8785 13.985L21.9501 13.9426C21.9501 13.9426 23.5568 13.8446 22.795 12.5929C22.7325 12.4905 22.3513 11.667 20.5113 9.97482C18.5853 8.20374 18.8433 8.49021 21.1632 5.42663C22.5761 3.56089 23.1409 2.42183 22.9645 1.93398C22.7962 1.46932 21.7571 1.59214 21.7571 1.59214L18.2987 1.61348C18.2987 1.61348 18.0424 1.57883 17.8522 1.69144C17.6664 1.80188 17.5468 2.05927 17.5468 2.05927C17.5468 2.05927 16.9995 3.50304 16.2695 4.73088C14.7295 7.32176 14.1137 7.4585 13.8621 7.29763C13.2766 6.92269 13.4228 5.79136 13.4228 4.98765C13.4228 2.4769 13.8071 1.43003 12.6743 1.15904C12.2984 1.06901 12.0217 1.00962 11.0603 1.00003C9.82637 0.987341 8.78192 1.00374 8.19054 1.29082C7.79711 1.4817 7.49361 1.90706 7.67846 1.9315C7.90702 1.96182 8.42472 2.06979 8.69918 2.44009C9.05357 2.91774 9.04108 3.99059 9.04108 3.99059C9.04108 3.99059 9.24466 6.9462 8.56554 7.31341C8.09936 7.56522 7.45989 7.05107 6.08697 4.70057C5.38349 3.49655 4.85237 2.16569 4.85237 2.16569C4.85237 2.16569 4.74996 1.91696 4.56729 1.78394C4.3456 1.62276 4.03586 1.57141 4.03586 1.57141L0.749524 1.59275C0.749524 1.59275 0.256184 1.60637 0.0750839 1.8189C-0.0860324 2.00791 0.0622819 2.39894 0.0622819 2.39894C0.0622819 2.39894 2.63515 8.36275 5.54835 11.3682C8.21957 14.1236 11.253 13.9426 11.253 13.9426Z"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "fb",
-              viewBox: "0 0 11 24",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M10.557 11.9769H7.29433V24H2.35104V11.9769H0V7.75148H2.35104V5.01717C2.35104 3.06184 3.27445 0 7.33833 0L11 0.0154089V4.11688H8.34322C7.90743 4.11688 7.29466 4.33589 7.29466 5.26864V7.75542H10.9889L10.557 11.9769Z"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "whatsapp",
-              viewBox: "0 0 24 24",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M7.13767 20.5243C8.71039 21.464 10.5428 22 12.5024 22C18.293 22 23 17.29 23 11.5C23 5.70998 18.293 1 12.5024 1H12.4976C6.70703 1 2 5.70871 2 11.5C2 13.6082 2.62443 15.5773 3.70146 17.2242L2.67655 20.2794L2.04866 22.1511L3.92912 21.55L7.13767 20.5243Z",
-                stroke: "white",
-                "stroke-width": "2"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M18.0302 15.4153C17.801 16.0625 16.8913 16.5993 16.1658 16.756C15.6694 16.8617 15.021 16.946 12.8384 16.0412C10.0466 14.8845 8.24872 12.0476 8.10859 11.8635C7.97441 11.6795 6.98047 10.3613 6.98047 8.99809C6.98047 7.63484 7.67278 6.97103 7.95184 6.68603C8.18103 6.45209 8.55984 6.34521 8.92322 6.34521C9.04078 6.34521 9.14647 6.35115 9.24147 6.3559C9.52053 6.36778 9.66066 6.3844 9.84472 6.82497C10.0739 7.37715 10.632 8.7404 10.6985 8.88053C10.7662 9.02065 10.8339 9.21065 10.7389 9.39472C10.6498 9.58472 10.5715 9.66903 10.4313 9.83053C10.2912 9.99203 10.1582 10.1155 10.0181 10.2889C9.88984 10.4397 9.74497 10.6012 9.90647 10.8803C10.068 11.1534 10.6261 12.0642 11.4478 12.7957C12.5083 13.7398 13.368 14.0414 13.6756 14.1697C13.9048 14.2647 14.1779 14.2421 14.3453 14.064C14.5579 13.8348 14.8203 13.4548 15.0875 13.0807C15.2775 12.8123 15.5174 12.7791 15.7692 12.8741C16.0257 12.9632 17.383 13.6341 17.662 13.773C17.9411 13.9132 18.1252 13.9797 18.1928 14.0972C18.2593 14.2148 18.2593 14.767 18.0302 15.4153Z",
-                fill: "#FAFAFA"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "symbol",
-          {
-            attrs: {
-              id: "telegram",
-              viewBox: "0 0 24 20",
-              xmlns: "http://www.w3.org/2000/svg"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M9.71629 12.6517L18.7548 19.4758L23.3172 0L0 9.1719L7.09516 11.522L20.044 2.83628L9.71629 12.6517Z"
               }
             })
           ]
@@ -13954,24 +13560,26 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-the-mask */ "./node_modules/vue-the-mask/dist/vue-the-mask.js");
-/* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_the_mask__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var vue_slide_up_down__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-slide-up-down */ "./node_modules/vue-slide-up-down/dist/vue-slide-up-down.m.js");
-/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-awesome-swiper */ "./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
-/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/swiper.css */ "./node_modules/swiper/css/swiper.css");
-/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_Sprite_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Sprite.vue */ "./src/components/Sprite.vue");
-/* harmony import */ var _components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/HeaderMain.vue */ "./src/components/HeaderMain.vue");
-/* harmony import */ var _components_Banners_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Banners.vue */ "./src/components/Banners.vue");
-/* harmony import */ var _components_Wood_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Wood.vue */ "./src/components/Wood.vue");
-/* harmony import */ var _components_Advantages_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Advantages.vue */ "./src/components/Advantages.vue");
-/* harmony import */ var _components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/FooterMain.vue */ "./src/components/FooterMain.vue");
-/* harmony import */ var _components_Products_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Products.vue */ "./src/components/Products.vue");
-/* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_3___default.a/* { default options with global component } */);vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_1___default.a);vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_12__["default"]);vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_2__["default"]);vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.ignoredElements=['noindex',/^ion-/];vue__WEBPACK_IMPORTED_MODULE_0___default.a.directive('scroll',{inserted:function inserted(el,binding){var f=function f(evt){if(binding.value(evt,el)){window.removeEventListener('scroll',f);}};window.addEventListener('scroll',f);console.log('scroll');}});var app=new vue__WEBPACK_IMPORTED_MODULE_0___default.a({el:'#app',data:function data(){return{};},watch:{},computed:{},created:function created(){},mounted:function mounted(){},methods:{},components:{Sprite:_components_Sprite_vue__WEBPACK_IMPORTED_MODULE_5__["default"],HeaderMain:_components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_6__["default"],Banners:_components_Banners_vue__WEBPACK_IMPORTED_MODULE_7__["default"],FooterMain:_components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_10__["default"],Wood:_components_Wood_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Advantages:_components_Advantages_vue__WEBPACK_IMPORTED_MODULE_9__["default"],Products:_components_Products_vue__WEBPACK_IMPORTED_MODULE_11__["default"]}});
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-the-mask */ "./node_modules/vue-the-mask/dist/vue-the-mask.js");
+/* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_the_mask__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue_slide_up_down__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-slide-up-down */ "./node_modules/vue-slide-up-down/dist/vue-slide-up-down.m.js");
+/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-awesome-swiper */ "./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
+/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/css/swiper.css */ "./node_modules/swiper/css/swiper.css");
+/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Sprite_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Sprite.vue */ "./src/components/Sprite.vue");
+/* harmony import */ var _components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/HeaderMain.vue */ "./src/components/HeaderMain.vue");
+/* harmony import */ var _components_Banners_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Banners.vue */ "./src/components/Banners.vue");
+/* harmony import */ var _components_Wood_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Wood.vue */ "./src/components/Wood.vue");
+/* harmony import */ var _components_Advantages_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Advantages.vue */ "./src/components/Advantages.vue");
+/* harmony import */ var _components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/FooterMain.vue */ "./src/components/FooterMain.vue");
+/* harmony import */ var _components_Products_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Products.vue */ "./src/components/Products.vue");
+/* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
+function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_4___default.a/* { default options with global component } */);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_13__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_3__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];vue__WEBPACK_IMPORTED_MODULE_1___default.a.directive('scroll',{inserted:function inserted(el,binding){var f=function f(evt){if(binding.value(evt,el)){window.removeEventListener('scroll',f);}};window.addEventListener('scroll',f);console.log('scroll');}});var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,offsetLeft:0,tabletBreakpoint:1025,mobileBreakpoint:767,menuShown:false,width:null,height:null,timeout_stick:null};},watch:{},created:function created(){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_this.width=window.innerWidth;_this.height=window.innerHeight;case 2:case"end":return _context.stop();}}},_callee);}))();},computed:{isTablet:function isTablet(){return this.width<=this.tabletBreakpoint;},isMobile:function isMobile(){return this.width<=this.mobileBreakpoint;}},mounted:function mounted(){this.addListeners();},methods:{addListeners:function addListeners(){var _this2=this;window.addEventListener('scroll',this.onScroll);window.addEventListener('resize',this.onResize);window.onload=function(){setTimeout(function(){_this2.getOffsetLeft();},500);};},onScroll:function onScroll(e){this.window_top=window.pageYOffset;},onResize:function onResize(){this.width=window.innerWidth;this.height=window.innerHeight;this.getOffsetLeft();this.menuShown=false;},getOffsetLeft:function getOffsetLeft(){try{this.offsetLeft=document.querySelector('footer .container').offsetLeft+document.querySelector('footer .container').offsetWidth;}catch(error){}}},components:{Sprite:_components_Sprite_vue__WEBPACK_IMPORTED_MODULE_6__["default"],HeaderMain:_components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_7__["default"],Banners:_components_Banners_vue__WEBPACK_IMPORTED_MODULE_8__["default"],FooterMain:_components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_11__["default"],Wood:_components_Wood_vue__WEBPACK_IMPORTED_MODULE_9__["default"],Advantages:_components_Advantages_vue__WEBPACK_IMPORTED_MODULE_10__["default"],Products:_components_Products_vue__WEBPACK_IMPORTED_MODULE_12__["default"]}});
 
 /***/ }),
 

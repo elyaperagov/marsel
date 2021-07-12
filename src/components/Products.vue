@@ -48,9 +48,23 @@ export default {
       SliderOptions: {
         slidesPerView: 3,
         spaceBetween: 20,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
         pagination: {
           el: ".swiper-pagination",
-          clickable: true
+          clickable: true,
         },
         navigation: {
           nextEl: ".swiper-button-next",
@@ -65,7 +79,7 @@ export default {
           height: 359,
         },
         {
-          img: "img/gel-1.png",
+          img: "img/gel-2.png",
           alt: "гель для душа",
           width: 790,
           height: 359,
